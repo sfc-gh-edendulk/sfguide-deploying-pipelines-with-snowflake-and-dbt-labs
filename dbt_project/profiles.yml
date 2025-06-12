@@ -1,0 +1,23 @@
+dbt_project:
+  outputs:
+    dev:
+      account: WE94298
+      database: dbt_hol_2025_dev
+      password: eyJraWQiOiI3ODI2ODkwNzA2NjU3NDYiLCJhbGciOiJFUzI1NiJ9.eyJwIjoiNDY2NTE5NDg6NDY2NTIwNDAiLCJpc3MiOiJTRjoyMDAyIiwiZXhwIjoxNzgxMjc5MDE4fQ.gXOYRkaz1zDDNp2FyNOvykpL2ogmCOzLjwSJjsNvC34zGkTvyz06JZLaLR9A_98IQyyX4yQNeAxEBTwwftxeiw
+      role: dbt_hol_role_dev
+      schema: public
+      threads: 100
+      type: snowflake
+      user: DBT_SERVICE_USER
+      warehouse: vwh_dbt_hol_dev
+    prod:
+      account: WE94298
+      database: dbt_hol_2025_prod
+      password: eyJraWQiOiI3ODI2ODkwNzA2NjU3NDYiLCJhbGciOiJFUzI1NiJ9.eyJwIjoiNDY2NTE5NDg6NDY2NTIwNDAiLCJpc3MiOiJTRjoyMDAyIiwiZXhwIjoxNzgxMjc5MDE4fQ.gXOYRkaz1zDDNp2FyNOvykpL2ogmCOzLjwSJjsNvC34zGkTvyz06JZLaLR9A_98IQyyX4yQNeAxEBTwwftxeiw
+      role: dbt_hol_role_prod
+      schema: public
+      threads: 100
+      type: snowflake
+      user: DBT_SERVICE_USER
+      warehouse: vwh_dbt_hol_prod
+  target: dev
